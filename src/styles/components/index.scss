@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+// Inicio sección sobreNosotros
+.nosotros-seccion {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    @media (min-width: 600px) {
+        flex-direction: row;
+      }
+
+    &__imagen {
+      flex: 1;
+      
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  
+    &__contenido {
+      flex: 1;
+      padding: 0 2rem;
+      text-align: center;
+      margin: 0px;
+  
+      h2 {
+        margin-top: 1.8rem;
+        font-size: 2rem;
+        font-weight: bold;
+        @media (min-width: 600px) {
+            font-size: 1.6rem;
+            margin: 0.8rem 0rem 0rem 0rem;
+          }
+        @media (min-width: 900px) { // Vista para IPAD Y PC
+            font-size: 2.2em;
+          }
+      }
+  
+      p {
+        text-align: justify;
+        font-size: 0.8rem;
+        color: #333;
+        line-height: 1.5;
+        @media (min-width: 600px) {
+            font-size: 0.9rem;
+          }
+        @media (min-width: 900px) {
+            font-size: 1.1rem;
+          }
+      }
+    }
+  }
+// Fin sección sobreNosotros
+// Inicio sección Misión y Visión
+.nosotros-MisionVision {
+    text-align: center;
+    margin: 2rem 1rem;
+  
+    h2 {
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+            @media (min-width: 600px) {
+                font-size: 1.9rem;
+            }
+            @media (min-width: 900px) {
+                font-size: 2.2rem;
+            }
+        }
+  
+    .nosotros-tarjetas {
+        display: flex;
+        padding: 0 0.8rem;
+        text-align: justify;
+        justify-content: center;
+        gap: 0.8rem;
+        position: relative;
+        height: auto;
+        line-height: 1.4;
+
+            @media (min-width: 600px) {
+                padding: 0 1rem;
+                text-align: justify;
+                display: flex;
+                justify-content: center;
+                gap: 0.2rem;
+                position: relative;
+                height: auto;
+                line-height: 1.6;
+            }  
+
+      .nosotros-tarjeta {
+
+        width: 37.5rem;
+        padding: 1.8rem;
+        border-radius: 0.95rem;
+        box-shadow: 0rem 0.25rem 0.8rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+
+            p {
+                font-size: 0.9rem;
+                color: #333;
+                @media (min-width: 900px) {
+                    font-size: 1rem;
+                  }
+            }
+
+                @media (min-width: 600px) {
+                    width: 37.5rem;
+                    padding: 2.8rem;
+                    border-radius: 0.95rem;
+                    box-shadow: 0rem 0.25rem 0.8rem rgba(0, 0, 0, 0.2);
+                    font-size: 1rem;
+                    color: #333;
+                    display: flex;
+                    align-items: center;
+                }
+
+                @media (min-width: 900px) {
+                    width: 37.5rem;
+                    padding: 2.8rem;
+                    border-radius: 0.95rem;
+                    box-shadow: 0rem 0.25rem 0.8rem rgba(0, 0, 0, 0.2);
+                    font-size: 1rem;
+                    color: #333;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+    
+      .mision {
+        background-color: white;
+        position: relative;
+        z-index: 0;
+      }
+  
+      // src/styles/MissionVision.scss
+      .vision {
+      background-color: #87d100;
+      color: #fff;
+      margin-left: -1.563rem;
+      z-index: 0;
+      position: relative;
+      top: 2.5rem;   // Mueve hacia abaj
+      }
+    }
+  }
+// Fin sección Misión y Visión
+// Inicio sección Proveedores
+body {
+    margin: 0;
+}
+
+.nosotros-proveedores {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 2rem;
+    margin: 4rem 0;
+    text-align: center;
+  
+    .nosotros-proveedoresGrid {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap: 0.625rem;
+      @media (min-width: 600px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+      .nosotros-texto {
+        grid-column: 1 / 2;
+        text-align: left;
+        font-size: 2.3rem;
+        padding-left: 1.25rem;
+      }
+  
+      .nosotros-proveedoresContenedor {
+        
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        @media (min-width: 600px) {
+            grid-column: 2/5;
+            gap: 3rem;
+          }
+          @media (min-width: 900px) {
+            gap: 6rem;
+          }
+      }
+
+      .circle {
+        width: 5.625rem;
+        height: 5.625rem;
+        border-radius: 50%;
+        background-color: #666;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 0.875rem;
+        @media (min-width: 600px) {
+            width: 9.375rem;
+            height: 9.375rem;;
+          }
+      }
+    }
+  }
+// Fin sección Proveedores
+// Inicio sección Formulario
+
+.formulario {
+    justify-items: center;
+    align-items: center;
+}
+
+.contact-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: #a1d800;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 50%;
+    margin: 2rem;
+  
+    label {
+      font-size: 1.2rem;
+      color: #333;
+    }
+  
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      border: none;
+      font-size: 1rem;
+    }
+  
+    textarea {
+      resize: none;
+      height: 5rem;
+    }
+  
+    .error {
+      font-size: 0.9rem;
+      color: red;
+    }
+  
+    button {
+      width: 50%;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      background-color: #666;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #333;
+      }
+    }
+  }
+// Fin sección Formulario
